@@ -34,7 +34,8 @@ cualquier lugar, sin tener el PC encendido.
 
 ### Repositorio ya creado
 
-- **Repo:** https://github.com/rafaelejimenezc-wq/agrosmart (privado)
+- **Repo:** https://github.com/rafaelejimenezc-wq/agrosmart (público)
+- **App en línea:** https://agrosmart-h6mj2vpjj6acmwwjrrthjf.streamlit.app/
 - **Rama:** `main`
 - **Archivo principal:** `app.py`
 

@@ -1,5 +1,7 @@
 # 🌱 AgroSmart
 
+> 🌐 **App en línea:** https://agrosmart-h6mj2vpjj6acmwwjrrthjf.streamlit.app/
+
 **Sistema inteligente de apoyo a la decisión agrícola** — proyecto académico de
 Ingeniería Ambiental.
 

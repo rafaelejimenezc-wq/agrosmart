@@ -1,5 +1,7 @@
 # 🎓 AgroSmart — Guía para la presentación
 
+> 🌐 **App en línea:** https://agrosmart-h6mj2vpjj6acmwwjrrthjf.streamlit.app/
+
 ## 1. Antes de salir de casa
 
 - Lleva el **computador cargado** y el cargador.

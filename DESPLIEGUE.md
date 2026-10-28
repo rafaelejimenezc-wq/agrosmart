@@ -32,20 +32,32 @@ Ideal para la exposición o para probar con el celular.
 Así tendrás un enlace tipo `https://agrosmart.streamlit.app` que abre desde
 cualquier lugar, sin tener el PC encendido.
 
-### Lo que necesitas (cuentas gratuitas)
+### Repositorio ya creado
 
-1. Una cuenta de **GitHub**: https://github.com/signup
-2. Una cuenta de **Streamlit Community Cloud**: https://share.streamlit.io
-   (se entra con la cuenta de GitHub)
+- **Repo:** https://github.com/rafaelejimenezc-wq/agrosmart (privado)
+- **Rama:** `main`
+- **Archivo principal:** `app.py`
 
 ### Pasos
 
-1. Crea un repositorio nuevo en GitHub (puede ser privado).
-2. Sube **todo el contenido de esta carpeta** (excepto `.venv`, que no existe
-   aquí). Puedes usar GitHub Desktop si no manejas Git.
-3. Entra a https://share.streamlit.io → **New app**.
-4. Elige el repositorio, la rama `main` y el archivo principal **`app.py`**.
+1. Entra a https://share.streamlit.io e inicia sesión con GitHub
+   (`rafaelejimenezc-wq`).
+2. Autoriza a Streamlit para acceder al repositorio privado `agrosmart`.
+3. Pulsa **New app** y elige:
+   - Repository: `rafaelejimenezc-wq/agrosmart`
+   - Branch: `main`
+   - Main file path: `app.py`
+4. En **Advanced settings → Secrets**, pega el contenido de tu archivo local
+   `.streamlit/secrets.toml` (contiene `DATABASE_URL` y `AGROSMART_SECRET`).
+   No lo compartas ni lo subas a GitHub.
 5. Pulsa **Deploy**. En 2–3 minutos tendrás tu enlace público.
+
+> **Importante:** en la nube la base de datos es **Neon**, así que las cuentas
+> y los datos persisten. No se usa el SQLite local.
+>
+> Si Streamlit no puede acceder al repo privado, puedes hacerlo público
+> **solo después de cambiar la contraseña del administrador** y quitar las
+> credenciales de la documentación.
 
 > **Importante:** en la nube, la base de datos SQLite (`datos/agrosmart.db`)
 > es **temporal**: si la app se reinicia, se pierden las cuentas y los registros.

@@ -452,7 +452,15 @@ def clasificar_puntaje(p):
 # Interfaz
 # ---------------------------------------------------------------------------
 st.set_page_config(page_title="AgroSmart", page_icon="🌱", layout="wide")
-init_db()
+try:
+    init_db()
+except Exception as e:
+    st.error(
+        "No se pudo conectar a la base de datos. Revisa los Secrets "
+        "(PGHOST, PGDATABASE, PGUSER, PGPASSWORD, PGSSLMODE)."
+    )
+    st.code(str(e))
+    st.stop()
 
 st.markdown(
     """

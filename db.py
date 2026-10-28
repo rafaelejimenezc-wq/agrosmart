@@ -11,6 +11,7 @@ import os
 import re
 import sqlite3
 from pathlib import Path
+from urllib.parse import quote, urlparse
 
 from dotenv import load_dotenv
 
@@ -18,17 +19,53 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env.local")
 load_dotenv(BASE_DIR / ".env")
 
-DATABASE_URL = os.environ.get("DATABASE_URL", "").strip()
-if not DATABASE_URL:
+
+def _cfg(nombre, default=""):
+    v = os.environ.get(nombre, "").strip()
+    if v:
+        return v
     try:
         import streamlit as st
-        DATABASE_URL = str(st.secrets.get("DATABASE_URL", "")).strip()
+        return str(st.secrets.get(nombre, default)).strip()
     except Exception:
-        pass
+        return default
 
+
+def _url_valida(u: str) -> bool:
+    try:
+        p = urlparse(u)
+        h = p.hostname or ""
+        if not h or ".." in h or h.startswith(".") or h.endswith("."):
+            return False
+        return all(0 < len(part) <= 63 for part in h.split("."))
+    except Exception:
+        return False
+
+
+def _url_desde_pg():
+    host = _cfg("PGHOST")
+    dbname = _cfg("PGDATABASE")
+    user = _cfg("PGUSER")
+    password = _cfg("PGPASSWORD")
+    sslmode = _cfg("PGSSLMODE", "require") or "require"
+    if host and dbname and user and password:
+        return (
+            f"postgresql://{quote(user, safe='')}:{quote(password, safe='')}"
+            f"@{host}/{quote(dbname, safe='')}?sslmode={quote(sslmode, safe='')}"
+        )
+    return ""
+
+
+DATABASE_URL = _cfg("DATABASE_URL")
 # Limpiar saltos de línea, espacios y comillas que se cuelan al pegar el secreto.
 DATABASE_URL = DATABASE_URL.strip().strip('"').strip("'")
 DATABASE_URL = "".join(DATABASE_URL.split())
+
+# Si la URL no es válida, reconstruirla con las variables PG* (más robusto).
+if not DATABASE_URL or not _url_valida(DATABASE_URL):
+    _pg = _url_desde_pg()
+    if _pg:
+        DATABASE_URL = _pg
 
 FORCE_SQLITE = os.environ.get("AGROSMART_DB", "").strip().lower() == "sqlite"
 USE_POSTGRES = (not FORCE_SQLITE) and DATABASE_URL.startswith(("postgres://", "postgresql://"))

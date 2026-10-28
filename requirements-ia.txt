@@ -1,0 +1,7 @@
+# Dependencias del modulo de IA (Fase 3). Son pesadas (~150 MB).
+# Instalar con:  instalar_ia.bat
+#
+# torch se instala aparte desde el indice CPU para no descargar CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+transformers==5.21.0

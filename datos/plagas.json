@@ -1,0 +1,371 @@
+{
+  "_nota": "Catálogo DE EJEMPLO. Amplíalo y cítalo con fuentes fitosanitarias (ICA, Agrosavia, FAO). La detección por foto es un APOYO preliminar, no reemplaza la inspección de un profesional.",
+  "plagas": [
+    {
+      "nombre": "Mosca blanca",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Tomate", "Pimiento", "Pepino", "Habichuela", "Guayaba", "Mango", "Uva"],
+      "sintomas": ["insectos_pequenos_blancos", "melaza", "fumagina", "hojas_amarillas", "deformacion_hojas"],
+      "manejo": "Monitoreo con trampas amarillas, control biológico (Encarsia formosa), rotación de cultivos y aplicación dirigida según umbral de daño."
+    },
+    {
+      "nombre": "Pulgón",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Lechuga", "Repollo", "Brócoli", "Espinaca", "Habichuela", "Arveja", "Fríjol", "Fresa", "Mora", "Naranja", "Papa", "Remolacha"],
+      "sintomas": ["insectos_pequenos_verdes", "melaza", "hojas_rizadas", "deformacion_hojas", "fumagina"],
+      "manejo": "Control biológico (catarinas, Chrysoperla), eliminación de malezas hospederas y jabones potásicos en infestaciones leves."
+    },
+    {
+      "nombre": "Tizón tardío (Phytophthora infestans)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Papa", "Tomate"],
+      "sintomas": ["manchas_oscurecidas_hoja", "borde_lesion_agua", "moho_blanco_envés", "marchitez", "pudricion_fruto"],
+      "manejo": "Variedades resistentes, evitar exceso de humedad foliar, rotación y fungicidas autorizados según monitoreo."
+    },
+    {
+      "nombre": "Tizón temprano (Alternaria solani)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Papa", "Tomate"],
+      "sintomas": ["manchas_marrones_hoja", "manchas_oscurecidas_hoja", "hojas_amarillas", "defoliacion", "manchas_fruto"],
+      "manejo": "Rotación, eliminar restos de cosecha, riego por goteo y fungicidas preventivos autorizados."
+    },
+    {
+      "nombre": "Mildiu",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Cebolla", "Ajo", "Lechuga", "Espinaca", "Repollo", "Brócoli", "Pepino", "Uva"],
+      "sintomas": ["manchas_amarillentas_hoja", "moho_gris_envés", "manchas_oscurecidas_hoja", "hojas_amarillas"],
+      "manejo": "Buena ventilación, riego por goteo (no mojar el follaje), rotación y control con productos autorizados."
+    },
+    {
+      "nombre": "Oídio / Cenicilla",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Pepino", "Fresa", "Uva", "Mora", "Mango", "Guayaba"],
+      "sintomas": ["polvo_blanco_hoja", "deformacion_hojas", "hojas_amarillas", "frutos_deformes"],
+      "manejo": "Ventilación, evitar exceso de humedad, azufre autorizado y control biológico."
+    },
+    {
+      "nombre": "Roya",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Fríjol", "Arveja", "Café", "Trigo", "Cebada", "Avena"],
+      "sintomas": ["pustulas_anaranjadas", "pustulas_marrones", "manchas_amarillentas_hoja", "defoliacion"],
+      "manejo": "Variedades resistentes, reducir densidad de siembra, monitoreo temprano y fungicidas según umbral."
+    },
+    {
+      "nombre": "Gusano cogollero (Spodoptera frugiperda)",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Maíz", "Arroz", "Caña de azúcar"],
+      "sintomas": ["hojas_mordidas", "cogollo_perforado", "excremento_en_hoja", "mazorca_danada"],
+      "manejo": "Monitoreo de huevos y larvas, control biológico (Trichogramma) y manejo integrado con umbrales."
+    },
+    {
+      "nombre": "Barrenador del tallo (Diatraea)",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Maíz", "Caña de azúcar", "Arroz"],
+      "sintomas": ["agujeros_tallo", "tallo_quebrado", "marchitez", "espigas_blancas"],
+      "manejo": "Eliminación de residuos, rotación, liberación de parasitoides y variedades tolerantes."
+    },
+    {
+      "nombre": "Gorgojo del maíz",
+      "tipo": "Plaga (insecto de almacén)",
+      "cultivos": ["Maíz"],
+      "sintomas": ["semillas_perforadas", "mazorca_danada", "insectos_pequenos_negros"],
+      "manejo": "Secado adecuado del grano, almacenamiento hermético y limpieza de silos."
+    },
+    {
+      "nombre": "Araña roja",
+      "tipo": "Plaga (ácaro)",
+      "cultivos": ["Tomate", "Pepino", "Fresa", "Naranja", "Mango", "Uva"],
+      "sintomas": ["telarana_fina", "hojas_amarillas", "hojas_secas", "defoliacion"],
+      "manejo": "Mantener humedad ambiental, control biológico (Phytoseiulus) y acaricidas autorizados."
+    },
+    {
+      "nombre": "Minador de la hoja",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Tomate", "Papa", "Cebolla", "Remolacha", "Espinaca", "Lechuga"],
+      "sintomas": ["galerias_en_hoja", "hojas_amarillas", "defoliacion"],
+      "manejo": "Eliminación de hojas afectadas, trampas cromáticas y control biológico de parasitoides."
+    },
+    {
+      "nombre": "Nematodos del nudo (Meloidogyne)",
+      "tipo": "Plaga (nematodo)",
+      "cultivos": ["Tomate", "Papa", "Zanahoria", "Cebolla", "Plátano", "Yuca", "Pimiento"],
+      "sintomas": ["raices_con_nudos", "crecimiento_lento", "marchitez", "hojas_amarillas"],
+      "manejo": "Rotación con no hospederos, solarización del suelo, materia orgánica y variedades resistentes."
+    },
+    {
+      "nombre": "Marchitez bacteriana (Ralstonia)",
+      "tipo": "Enfermedad (bacteria)",
+      "cultivos": ["Tomate", "Papa", "Pimiento"],
+      "sintomas": ["marchitez", "hojas_amarillas", "necrosis_bordes", "tallo_quebrado"],
+      "manejo": "Semilla certificada, rotación, desinfección de herramientas y eliminación de plantas enfermas."
+    },
+    {
+      "nombre": "Mancha bacteriana",
+      "tipo": "Enfermedad (bacteria)",
+      "cultivos": ["Tomate", "Pimiento", "Mango"],
+      "sintomas": ["manchas_oscurecidas_hoja", "manchas_fruto", "hojas_amarillas", "perforaciones"],
+      "manejo": "Semilla sana, evitar mojado foliar, rotación y productos cúpricos autorizados."
+    },
+    {
+      "nombre": "Virus del mosaico",
+      "tipo": "Enfermedad (virus)",
+      "cultivos": ["Tomate", "Pepino", "Habichuela", "Cilantro", "Pimiento"],
+      "sintomas": ["mosaico_hojas", "deformacion_hojas", "enanismo", "hojas_amarillas"],
+      "manejo": "Control de vectores (pulgones), variedades resistentes y eliminación de plantas infectadas."
+    },
+    {
+      "nombre": "Virus del rizado amarillo del tomate",
+      "tipo": "Enfermedad (virus)",
+      "cultivos": ["Tomate"],
+      "sintomas": ["hojas_rizadas", "hojas_amarillas", "enanismo", "deformacion_hojas"],
+      "manejo": "Control de mosca blanca, mallas antiinsectos y variedades resistentes."
+    },
+    {
+      "nombre": "Antracnosis",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Fríjol", "Mango", "Aguacate", "Café", "Cacao", "Fresa", "Guayaba"],
+      "sintomas": ["manchas_oscurecidas_hoja", "manchas_fruto", "pudricion_fruto", "defoliacion"],
+      "manejo": "Poda sanitaria, evitar exceso de humedad, rotación y fungicidas autorizados."
+    },
+    {
+      "nombre": "Moniliasis del cacao",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Cacao"],
+      "sintomas": ["pudricion_fruto", "manchas_fruto", "fruto_con_moho"],
+      "manejo": "Remoción semanal de frutos enfermos, poda de aireación y control biológico."
+    },
+    {
+      "nombre": "Escoba de bruja",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Cacao"],
+      "sintomas": ["deformacion_hojas", "crecimiento_lento", "hojas_amarillas", "frutos_deformes"],
+      "manejo": "Poda de ramas afectadas, sombra regulada y variedades tolerantes."
+    },
+    {
+      "nombre": "Sigatoka negra",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Plátano"],
+      "sintomas": ["manchas_oscurecidas_hoja", "manchas_amarillentas_hoja", "defoliacion", "hojas_secas"],
+      "manejo": "Deshoje sanitario, buena aireación, rotación y fungicidas según monitoreo."
+    },
+    {
+      "nombre": "Picudo del plátano",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Plátano"],
+      "sintomas": ["agujeros_tallo", "tallo_quebrado", "marchitez", "hojas_amarillas"],
+      "manejo": "Trampas con feromona, eliminación de pseudotallos y control biológico."
+    },
+    {
+      "nombre": "Broca del café (Hypothenemus hampei)",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Café"],
+      "sintomas": ["semillas_perforadas", "manchas_fruto", "pudricion_fruto", "flores_caen"],
+      "manejo": "Recolección oportuna, trampas con alcohol, control biológico (Beauveria bassiana) y manejo de sombra."
+    },
+    {
+      "nombre": "Roya del café (Hemileia vastatrix)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Café"],
+      "sintomas": ["pustulas_anaranjadas", "manchas_amarillentas_hoja", "defoliacion", "hojas_amarillas"],
+      "manejo": "Variedades resistentes, nutrición balanceada, sombra regulada y fungicidas autorizados."
+    },
+    {
+      "nombre": "Mancha de hierro del café",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Café"],
+      "sintomas": ["manchas_marrones_hoja", "manchas_oscurecidas_hoja", "defoliacion"],
+      "manejo": "Nutrición adecuada, poda de aireación y fungicidas preventivos."
+    },
+    {
+      "nombre": "Mosca de la fruta",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Mango", "Naranja", "Guayaba"],
+      "sintomas": ["pudricion_fruto", "manchas_fruto", "larvas_en_suelo", "flores_caen"],
+      "manejo": "Trampas con atrayentes, recolección de frutos caídos y control biológico."
+    },
+    {
+      "nombre": "HLB / Citrus greening",
+      "tipo": "Enfermedad (bacteria)",
+      "cultivos": ["Naranja"],
+      "sintomas": ["hojas_amarillas", "deformacion_hojas", "enanismo", "frutos_deformes"],
+      "manejo": "Control del psílido vector, material de siembra certificado y eliminación de árboles infectados."
+    },
+    {
+      "nombre": "Trips",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Cebolla", "Ajo", "Mango", "Aguacate", "Uva"],
+      "sintomas": ["hojas_plateadas", "insectos_pequenos_negros", "deformacion_hojas", "manchas_fruto"],
+      "manejo": "Trampas azules, control biológico y rotación de ingredientes activos."
+    },
+    {
+      "nombre": "Pudrición radicular (Phytophthora)",
+      "tipo": "Enfermedad (oomiceto)",
+      "cultivos": ["Aguacate", "Naranja", "Plátano", "Cacao"],
+      "sintomas": ["pudricion_raiz", "raiz_oscura", "marchitez", "hojas_amarillas"],
+      "manejo": "Buen drenaje, evitar encharcamientos, portainjertos resistentes y control del riego."
+    },
+    {
+      "nombre": "Carbón del trigo",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Trigo"],
+      "sintomas": ["espigas_blancas", "semillas_perforadas", "hojas_amarillas", "enanismo"],
+      "manejo": "Semilla tratada, variedades resistentes y rotación de cultivos."
+    },
+    {
+      "nombre": "Septoriosis",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Trigo", "Cebada"],
+      "sintomas": ["manchas_marrones_hoja", "manchas_amarillentas_hoja", "defoliacion", "hojas_secas"],
+      "manejo": "Rotación, semilla sana, monitoreo y fungicidas en etapas críticas."
+    },
+    {
+      "nombre": "Añublo del arroz (Pyricularia)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Arroz"],
+      "sintomas": ["manchas_marrones_hoja", "manchas_oscurecidas_hoja", "espigas_blancas", "marchitez"],
+      "manejo": "Manejo del agua, dosis equilibrada de nitrógeno y variedades resistentes."
+    },
+    {
+      "nombre": "Sogata / saltahojas",
+      "tipo": "Plaga (insecto)",
+      "cultivos": ["Arroz", "Maíz"],
+      "sintomas": ["hojas_amarillas", "hojas_secas", "enanismo", "insectos_pequenos_verdes"],
+      "manejo": "Monitoreo temprano, control biológico y manejo de malezas hospederas."
+    },
+    {
+      "nombre": "Babosa / caracol",
+      "tipo": "Plaga (molusco)",
+      "cultivos": ["Lechuga", "Repollo", "Brócoli", "Fresa", "Cilantro"],
+      "sintomas": ["hojas_mordidas", "perforaciones", "excremento_en_hoja"],
+      "manejo": "Eliminar refugios húmedos, barreras físicas y recolección manual."
+    },
+    {
+      "nombre": "Polilla de la col",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Repollo", "Brócoli"],
+      "sintomas": ["hojas_mordidas", "perforaciones", "excremento_en_hoja", "cogollo_perforado"],
+      "manejo": "Mallas antiinsectos, control biológico (Trichogramma) y monitoreo de larvas."
+    },
+    {
+      "nombre": "Mosca de la zanahoria",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Zanahoria"],
+      "sintomas": ["galerias_en_hoja", "raiz_oscura", "pudricion_raiz", "crecimiento_lento"],
+      "manejo": "Rotación, mallas, trampas cromáticas y eliminación de residuos."
+    },
+    {
+      "nombre": "Mosca de la cebolla",
+      "tipo": "Plaga (larva)",
+      "cultivos": ["Cebolla", "Ajo"],
+      "sintomas": ["galerias_en_hoja", "pudricion_raiz", "crecimiento_lento", "hojas_amarillas"],
+      "manejo": "Rotación, trampas amarillas y eliminación de bulbos afectados."
+    },
+    {
+      "nombre": "Podredumbre blanca (Sclerotium)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Ajo", "Cebolla"],
+      "sintomas": ["pudricion_raiz", "raiz_oscura", "marchitez", "hojas_amarillas"],
+      "manejo": "Rotación larga, solarización y eliminación de plantas afectadas."
+    },
+    {
+      "nombre": "Mal de Panamá (Fusarium)",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Plátano"],
+      "sintomas": ["hojas_amarillas", "marchitez", "pudricion_raiz", "tallo_quebrado"],
+      "manejo": "Material de siembra sano, rotación y cuarentena de lotes afectados."
+    },
+    {
+      "nombre": "Botrytis / moho gris",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Fresa", "Uva", "Mora"],
+      "sintomas": ["moho_gris_envés", "pudricion_fruto", "fruto_con_moho", "manchas_fruto"],
+      "manejo": "Ventilación, reducir humedad, poda sanitaria y fungicidas autorizados."
+    },
+    {
+      "nombre": "Pudrición de la corona",
+      "tipo": "Enfermedad (hongo)",
+      "cultivos": ["Fresa"],
+      "sintomas": ["pudricion_raiz", "marchitez", "hojas_amarillas", "raiz_oscura"],
+      "manejo": "Sustratos limpios, buen drenaje y variedades tolerantes."
+    },
+    {
+      "nombre": "Bacteriosis del ajo",
+      "tipo": "Enfermedad (bacteria)",
+      "cultivos": ["Ajo"],
+      "sintomas": ["manchas_oscurecidas_hoja", "pudricion_raiz", "hojas_amarillas", "marchitez"],
+      "manejo": "Semilla certificada, rotación y evitar exceso de humedad."
+    },
+    {
+      "nombre": "Deficiencia nutricional",
+      "tipo": "Desorden fisiológico",
+      "cultivos": ["Tomate", "Papa", "Lechuga", "Maíz", "Fríjol", "Café", "Cebolla", "Zanahoria", "Mora", "Arveja", "Pimiento", "Pepino", "Repollo", "Brócoli", "Espinaca", "Remolacha", "Ajo", "Cilantro", "Habichuela", "Trigo", "Arroz", "Cebada", "Avena", "Soya", "Garbanzo", "Lenteja", "Fresa", "Naranja", "Aguacate", "Mango", "Guayaba", "Plátano", "Uva", "Yuca", "Batata", "Cacao", "Caña de azúcar", "Girasol"],
+      "sintomas": ["hojas_amarillas", "clorosis_entre_nervios", "crecimiento_lento", "bordes_quemados"],
+      "manejo": "Verificar el análisis de suelo y ajustar la fertilización según el requerimiento del cultivo."
+    },
+    {
+      "nombre": "Estrés hídrico",
+      "tipo": "Desorden fisiológico",
+      "cultivos": ["Tomate", "Papa", "Lechuga", "Maíz", "Fríjol", "Café", "Cebolla", "Zanahoria", "Mora", "Arveja", "Pimiento", "Pepino", "Repollo", "Brócoli", "Espinaca", "Remolacha", "Ajo", "Cilantro", "Habichuela", "Trigo", "Arroz", "Cebada", "Avena", "Soya", "Garbanzo", "Lenteja", "Fresa", "Naranja", "Aguacate", "Mango", "Guayaba", "Plátano", "Uva", "Yuca", "Batata", "Cacao", "Caña de azúcar", "Girasol"],
+      "sintomas": ["marchitez", "hojas_secas", "bordes_quemados", "flores_caen"],
+      "manejo": "Ajustar la frecuencia de riego, usar cobertura muerta y revisar el sistema de riego."
+    },
+    {
+      "nombre": "Salinidad del suelo",
+      "tipo": "Desorden fisiológico",
+      "cultivos": ["Tomate", "Cebolla", "Pimiento", "Pepino", "Remolacha"],
+      "sintomas": ["necrosis_bordes", "bordes_quemados", "crecimiento_lento", "hojas_amarillas"],
+      "manejo": "Lavado del suelo, mejorar el drenaje y usar variedades tolerantes."
+    }
+  ],
+  "sintomas_catalogo": {
+    "hojas_amarillas": "Hojas amarillas (clorosis general)",
+    "hojas_rizadas": "Hojas rizadas o deformadas",
+    "deformacion_hojas": "Deformación de hojas",
+    "insectos_pequenos_blancos": "Insectos pequeños blancos (mosca blanca)",
+    "insectos_pequenos_verdes": "Insectos pequeños verdes (pulgones)",
+    "insectos_pequenos_negros": "Insectos pequeños negros (trips o gorgojos)",
+    "melaza": "Melaza pegajosa en las hojas",
+    "fumagina": "Hollín negro sobre las hojas (fumagina)",
+    "hojas_pegajosas": "Hojas pegajosas",
+    "manchas_oscurecidas_hoja": "Manchas oscuras en hojas",
+    "borde_lesion_agua": "Lesiones con borde de agua",
+    "manchas_amarillentas_hoja": "Manchas amarillentas en hojas",
+    "manchas_marrones_hoja": "Manchas marrones en hojas",
+    "moho_blanco_envés": "Moho blanco en el envés",
+    "moho_gris_envés": "Moho gris en el envés",
+    "polvo_blanco_hoja": "Polvo blanco sobre la hoja",
+    "pustulas_anaranjadas": "Pústulas anaranjadas",
+    "pustulas_marrones": "Pústulas marrones",
+    "defoliacion": "Caída de hojas (defoliación)",
+    "marchitez": "Marchitez de la planta",
+    "hojas_mordidas": "Hojas mordidas",
+    "perforaciones": "Perforaciones en hojas o tallos",
+    "excremento_en_hoja": "Excremento sobre la hoja",
+    "cogollo_perforado": "Cogollo perforado",
+    "galerias_en_hoja": "Galerías o caminos dentro de la hoja",
+    "raices_con_nudos": "Nudos o agallas en raíces",
+    "crecimiento_lento": "Crecimiento lento",
+    "clorosis_entre_nervios": "Clorosis entre nervios",
+    "bordes_quemados": "Bordes de hoja quemados",
+    "necrosis_bordes": "Necrosis en los bordes",
+    "pudricion_fruto": "Pudrición del fruto",
+    "pudricion_raiz": "Pudrición de la raíz",
+    "manchas_fruto": "Manchas en el fruto",
+    "frutos_deformes": "Frutos deformes",
+    "telarana_fina": "Telaraña fina (araña roja)",
+    "hojas_plateadas": "Hojas con aspecto plateado (trips)",
+    "hojas_blanquecinas": "Hojas blanquecinas",
+    "agujeros_tallo": "Agujeros en el tallo",
+    "tallo_quebrado": "Tallo quebrado",
+    "semillas_perforadas": "Semillas o granos perforados",
+    "mazorca_danada": "Mazorca dañada",
+    "espigas_blancas": "Espigas blancas o vacías",
+    "hojas_secas": "Hojas secas",
+    "mosaico_hojas": "Patrón de mosaico en hojas",
+    "enanismo": "Plantas enanas",
+    "flores_caen": "Caída de flores",
+    "raiz_oscura": "Raíces oscuras y blandas",
+    "fruto_con_moho": "Moho en el fruto",
+    "larvas_en_suelo": "Larvas en el suelo o frutos caídos"
+  }
+}

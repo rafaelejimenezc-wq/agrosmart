@@ -1,0 +1,27 @@
+# Entorno virtual (no subir)
+.venv/
+venv/
+
+# Base de datos local
+datos/agrosmart.db
+datos/iot.db
+
+# Secretos (claves de IA)
+.streamlit/secrets.toml
+datos/.secret
+
+# Neon
+.env
+.env.local
+.neon
+node_modules/
+
+# Reportes y temporales
+*.pdf
+AgroSmart_listo.zip
+__pycache__/
+*.pyc
+.DS_Store
+.neon
+node_modules/
+.env.local

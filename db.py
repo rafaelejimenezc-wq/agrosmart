@@ -26,6 +26,10 @@ if not DATABASE_URL:
     except Exception:
         pass
 
+# Limpiar saltos de línea, espacios y comillas que se cuelan al pegar el secreto.
+DATABASE_URL = DATABASE_URL.strip().strip('"').strip("'")
+DATABASE_URL = "".join(DATABASE_URL.split())
+
 FORCE_SQLITE = os.environ.get("AGROSMART_DB", "").strip().lower() == "sqlite"
 USE_POSTGRES = (not FORCE_SQLITE) and DATABASE_URL.startswith(("postgres://", "postgresql://"))
 

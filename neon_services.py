@@ -16,6 +16,17 @@ import db  # carga .env.local / .env
 BASE = os.path.dirname(os.path.abspath(__file__))
 
 
+def _cfg(nombre, default=""):
+    v = os.environ.get(nombre, "").strip()
+    if v:
+        return v
+    try:
+        import streamlit as st
+        return str(st.secrets.get(nombre, default)).strip()
+    except Exception:
+        return default
+
+
 def estado_postgres():
     try:
         with db.get_conn() as conn:
@@ -27,7 +38,7 @@ def estado_postgres():
 
 
 def estado_functions():
-    url = os.environ.get("NEON_FUNCTION_HELLO_BASE_URL", "").strip()
+    url = _cfg("NEON_FUNCTION_HELLO_BASE_URL")
     if not url:
         return False, "sin NEON_FUNCTION_HELLO_BASE_URL"
     try:
@@ -38,7 +49,7 @@ def estado_functions():
 
 
 def estado_auth():
-    url = os.environ.get("NEON_AUTH_JWKS_URL", "").strip()
+    url = _cfg("NEON_AUTH_JWKS_URL")
     if not url:
         return False, "sin NEON_AUTH_JWKS_URL"
     try:
@@ -50,14 +61,14 @@ def estado_auth():
 
 
 def estado_realtime():
-    url = os.environ.get("NEON_REALTIME_URL", "").strip()
+    url = _cfg("NEON_REALTIME_URL")
     if not url:
         return False, "sin NEON_REALTIME_URL"
     return True, f"configurado: {url} (probado con `neon realtime subscribe`)"
 
 
 def estado_ai_gateway():
-    url = os.environ.get("NEON_AI_GATEWAY_BASE_URL", "").strip()
+    url = _cfg("NEON_AI_GATEWAY_BASE_URL")
     if not url:
         return False, "no disponible en el plan Free"
     return True, url

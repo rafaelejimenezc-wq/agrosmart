@@ -36,8 +36,7 @@ Doble clic en **`iniciar.bat`** → se abre en `http://localhost:8501`.
 Doble clic en **`iniciar_demo.bat`**. Usa SQLite local con datos de ejemplo
 (no requiere internet) y las cuentas:
 
-- Admin: `admin@agrosmart.local` / `Admin2026*`
-- Demo: `maria@demo.local` / `demo1234`
+- Las credenciales están en `CREDENCIALES.txt` (no se sube a GitHub).
 
 La guía completa para la presentación está en **`PRESENTACION.md`**.
 

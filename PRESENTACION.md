@@ -17,8 +17,8 @@
 
 | Rol | Correo | Contraseña |
 |---|---|---|
-| **Administrador** | `admin@agrosmart.local` | `Admin2026*` |
-| **Usuario demo** | `maria@demo.local` | `demo1234` |
+| **Administrador** | `admin@agrosmart.local` | (ver `CREDENCIALES.txt`) |
+| **Usuario demo** | `maria@demo.local` | (ver `CREDENCIALES.txt`) |
 
 **Opción con Neon (requiere internet):** `iniciar.bat`.
 

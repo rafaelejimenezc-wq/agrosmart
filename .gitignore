@@ -19,6 +19,7 @@ node_modules/
 # Reportes y temporales
 *.pdf
 AgroSmart_listo.zip
+CREDENCIALES.txt
 __pycache__/
 *.pyc
 .DS_Store

@@ -14,8 +14,7 @@ echo.
 echo  ============================================
 echo   AGROSMART - MODO DEMO LOCAL (sin internet)
 echo  ============================================
-echo   Admin: admin@agrosmart.local / Admin2026*
-echo   Demo : maria@demo.local     / demo1234
+echo   Credenciales: revisa CREDENCIALES.txt
 echo.
 "%VENV%\Scripts\streamlit.exe" run "app.py" --server.address 0.0.0.0 --server.port 8501
 pause
